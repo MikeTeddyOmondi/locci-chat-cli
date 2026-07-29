@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "loccibox": {
+      "command": "loccibox",
+      "args": ["mcp", "start"]
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/tmp"],
+      "env": {
+        "SOME_VAR": "value"
+      },
+      "disabled": false
+    }
+  }
+}
